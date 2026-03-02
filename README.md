@@ -93,23 +93,7 @@ A complete, production-ready Android launcher app. Every line of code written fr
 3. Open APK file and tap Install
 4. Press Home button → Select FocusPhone → Always
 
-### Option 2: Command Line Build
-
-**Prerequisites:** Java JDK 17+ and Android SDK installed
-
-```cmd
-cd "c:\Users\Rav\OneDrive\Documents\Kraios\Claude Code\focusphone"
-gradlew.bat assembleDebug
-```
-
-APK output: `app\build\outputs\apk\debug\app-debug.apk`
-
-Or use the helper script:
-```cmd
-build-apk.bat
-```
-
-### Option 3: Direct Run from Android Studio
+### Option 2: Direct Run from Android Studio
 
 **1. Connect Your Phone**
 - Enable Developer Options: Settings → About Phone → Tap "Build Number" 7 times
