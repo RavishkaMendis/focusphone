@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        PRIVACY DECLARATION: This app requests NO internet permission.
+        Zero data leaves this device. Ever.
+    -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <!-- Note: No INTERNET permission — by design -->
+
+    <application
+        android:name=".FocusPhoneApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FocusPhone"
+        android:enableOnBackInvokedCallback="true">
+
+        <!-- ═══════════════════════════════════════════
+             MAIN LAUNCHER ACTIVITY
+             Registered as a HOME screen replacement
+             ═══════════════════════════════════════════ -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:resumeWhilePausing="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Required: Makes this app appear in the launcher chooser -->
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+
+        <!-- Mindful delay transparent overlay activity -->
+        <activity
+            android:name=".ui.screens.MindfulDelayActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:launchMode="singleTop" />
+
+    </application>
+
+</manifest>

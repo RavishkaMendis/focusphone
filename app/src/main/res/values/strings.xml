@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusPhone</string>
+    <string name="app_description">A minimalist, privacy-first launcher for people who build things.</string>
+</resources>

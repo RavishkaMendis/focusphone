@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FocusPhone Launcher Icon
+    A simple, clean mark — the letter F as a minimal geometric form.
+    Black background. White mark. Nothing more needed.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,0h108v108h-108z" />
+
+    <!-- F mark — clean, ultra-light weight -->
+    <!-- Vertical stem -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,26 L40,26 L40,82 L34,82 Z" />
+    <!-- Top horizontal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,26 L74,26 L74,32 L34,32 Z" />
+    <!-- Middle horizontal (shorter — creates the F) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,50 L65,50 L65,56 L34,56 Z" />
+
+</vector>

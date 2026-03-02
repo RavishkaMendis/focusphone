@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"[Environment]::GetEnvironmentVariable(''ANDROID_HOME'', ''User'')\")",
+      "Bash(powershell -Command \"[Environment]::GetEnvironmentVariable(''JAVA_HOME'', ''User'')\")",
+      "Bash(powershell -Command \"Test-Path ''C:\\Users\\Rav\\AppData\\Local\\Android\\Sdk''\")",
+      "Bash(git init)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
